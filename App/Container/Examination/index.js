@@ -8,7 +8,7 @@ import { View, Text, StyleSheet } from 'react-native'
 
 const ExaminationScreen = () => {
     return (
-        <View style={styles.styles}>
+        <View style={styles.container}>
             <Text>Examination Screen</Text>
         </View>
     )

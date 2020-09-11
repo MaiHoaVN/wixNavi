@@ -8,7 +8,7 @@ import { View, Text, StyleSheet } from 'react-native'
 
 const CategoryScreen = () => {
     return (
-        <View style={styles.styles}>
+        <View style={styles.container}>
             <Text>Category Screen</Text>
         </View>
     )

@@ -1,24 +1,12 @@
-/*
-@tnh
-RN0.63
-*/
-
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text } from 'react-native'
 
 const App = () => {
+    console.log('Vao APP')
     return (
-        <View style={styles.container}>
-            <Text>App Screen</Text>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>GO GO</Text>
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
-})
 export default App

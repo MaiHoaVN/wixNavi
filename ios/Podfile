@@ -8,6 +8,12 @@ target 'wixNavi' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'react-native-onesignal', :path => '../node_modules/react-native-onesignal'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
   target 'wixNaviTests' do
     inherit! :complete
     # Pods for testing

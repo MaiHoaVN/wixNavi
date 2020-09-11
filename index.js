@@ -1,9 +1,19 @@
 /**
  * @format
  */
+import { Navigation } from 'react-native-navigation';
+import { StartAppNavigation } from './App/Navigation/startAppNavigation'
+import { ApplicationNavigation } from './App/Navigation/applicationNavigation'
+import './App/Navigation/registrationScreen'
+console.disableYellowBox = true
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
-
-AppRegistry.registerComponent(appName, () => App);
+Navigation.events().registerAppLaunchedListener(() => {
+    Navigation.setRoot({
+        root: {
+            component: {
+                id: 'splash',
+                name: 'Splash'
+            }
+        }
+    });
+});
